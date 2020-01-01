@@ -1,0 +1,34 @@
+.navbar{
+    height: 5.2em;
+    padding: 1vw 15vw 1vw 15vw;
+    position: fixed;
+    z-index: 2;
+    background-color: none;
+    .navbar-brand{
+        position: relative;
+        top: 20px;
+        width: 150px;
+    }
+}
+.navbar-nav{
+    position: relative;
+    left: 25vw;
+    li{
+        font-family: 'Cinzel', serif;
+        // font-weight: 700;
+        color: black;
+        font-size: 21px;
+    }
+}
+.collapse{
+    div{
+        position: relative;
+        left: 27vw;
+    }
+}
+.navbar-brand{
+    z-index: 2;
+}
+.navbar-inner {
+    background:transparent;
+}
