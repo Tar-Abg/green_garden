@@ -1,0 +1,40 @@
+.footer{
+    position: relative;
+    top: 40px;
+}
+.content{
+    color: #919191;
+    p,h1,li{
+        font-family: 'Courier New', Courier, monospace;;
+        font-weight: 700;
+    }
+    .wrapper{
+        width: 65vw;
+        margin: 0 left;
+        padding-left: 5vw;
+        padding-bottom: 50px;
+    }
+    padding-top: 150px;
+    background-image: url('../../../assets/back.jpg');
+    background-size: cover;
+}
+
+@media screen and (max-width:750px){
+    li, p{
+        font-size: 0.8em;
+    }
+    p {
+        width: 98vw;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    .wrapper{
+        width: 90vw !important;
+        margin-right: 0px !important;
+        padding-right: 0px !important;
+    }
+    ol{
+        width: 100%;
+    }
+}

@@ -1,14 +1,11 @@
 div{
     width: 35%;
-    position: relative;
-    top: 600px;
     hr{
         position: relative;
         top: 65px;
         background-color: rgb(79, 241, 74);
         width: 180px;
         border: 2px solid rgb(109, 243, 109);
-        // margin: 0 10px;
     }
     .fa-leaf{
         margin: 0 -35px;
@@ -18,4 +15,16 @@ div{
 .filter-green{
     filter: invert(25%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(149%);
     width: 180px;
-  }
+}
+@media screen and (max-width:750px){
+    hr{
+        display: none;
+    }
+    .wrapper{
+        display: block !important;
+        text-align: center;
+    }
+    .filter-green{
+        width: 111px;
+    }
+}

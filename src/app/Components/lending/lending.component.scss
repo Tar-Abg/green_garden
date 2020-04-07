@@ -1,0 +1,56 @@
+.cards{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    top: 580px;
+    width: 80%;
+    justify-content: space-between !important;
+
+}
+.footer{
+    position: relative;
+    top: 640px;
+}
+.lineBrack{
+    position: relative;
+    top: 530px;
+}
+.card-footer{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 500px;
+
+}
+@media screen and (max-width:750px){
+    .lineBrack{
+        top: 180px;
+        right: 20px;
+    }
+
+    .cards{
+        position: static;
+        margin-top: 30px;
+        // top: 230px;
+
+    }
+    .flowerCard{
+        justify-content: center;
+        margin:  0 auto !important
+    }
+    .footer{
+        top: 300px;
+    }
+    .card-footer{
+        top: 200px;
+    }
+    .lineBrack{
+        position: static;
+        margin-top: 20px;
+        // top: 530px;
+    }
+    hr{
+        display: none;
+    }
+}

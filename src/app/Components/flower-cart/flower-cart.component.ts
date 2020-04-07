@@ -7,6 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class FlowerCartComponent implements OnInit {
   @Input() cardImage:String;
+  @Input() items:any;
   @Input() price:String;
   @Input() name:String;
 

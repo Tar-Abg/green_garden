@@ -1,0 +1,7 @@
+{
+    "/": {
+        "target": "https://greengarden77.000webhostapp.com",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

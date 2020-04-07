@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Pattaya&display=swap');
+$font-stack:'Pattaya', sans-serif;
+
 .carousel{
     margin: 0 auto;
-    width: 100%;
+    width: 100% !important;
     height: 300px;
 }
 
@@ -11,87 +14,13 @@
     width: 10%;
 }
 
-// .carousel-control-prev-icon,
-// .carousel-control-next-icon {
-//   position: relative;
-//   top: 250px;
-//   height: 100px;
-//   width: 100px;
-//   outline: black;
-//   background-size: 100%, 100%;
-//   border-radius: 50%;
-//   box-shadow: 5px;
-//   border: 3px solid rgb(78, 255, 33);
-//   background-image: none;
-// }
 .carousel-control-prev-icon, .carousel-control-next-icon {
     position: relative;
     top: 300px;
     height: 100px;
     width: 100px;
     outline: black;
-    background-color: rgba(27, 231, 187, 0.3);
     background-size: 100%, 100%;
-    border-radius: 50%;
-    // border: 1px solid black;
-}
-
-// .carousel-control-next-icon:after
-// {
-//   content: '>';
-//   font-size: 55px;
-//   color: red;
-// }
-
-// .carousel-control-prev-icon:after {
-//   content: '<';
-//   font-size: 55px;
-//   color: red;
-// }
-.carousel-indicators{
-    position: relative;
-    top: 700px;
-    li {
-        width: 150px;
-        height: 5px;
-        color: rebeccapurple !important
-    }
-    // color: black;      
-}
-.carusel-text{
-    h1{
-        position: relative;
-        left:500px;
-        text-align: center;
-        bottom: 100px;
-        font-family: 'Cinzel', serif;;
-        font-size: 60px;
-        -webkit-text-stroke-width: 1px; 
-        -webkit-text-stroke-color: black;
-
-    }
-}
-
-$avatar-size: 22px;
-$body-background: #333641;
-
-@font-face {
-	font-family: "ubuntu";
-	font-style: italic;
-	font-weight: 300;
-	src: local("Lato Light Italic"), local("Lato-LightItalic"),
-		url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2)
-			format("woff2");
-}
-
-body {
-	height: 100vh;
-	margin: 0;
-	background-color: $body-background;
-	font-family: "ubuntu", Arial, sans-serif;
-	overflow-x: hidden;
-	display: grid;
-	place-items: center;
 }
 
 a {
@@ -100,26 +29,28 @@ a {
 }
 
 .wrapper {
-	// text-align: center;
-	h1 {
+	p {
+		position: relative;
+		bottom: 100px;
         display: inline;
 		color: #fff;
 		font-size: 42px;
 		font-family: "ubuntu";
 		text-transform: uppercase;
 		font-weight: 700;
-		font-family: "Josefin Sans", sans-serif;
-		background: linear-gradient(to right, #92f879 10%, #fff 50%, #5bdaff 60%);
+		background: linear-gradient(to right, #43e8ee 10%, #fff 50%, #43e8ee 70%);
 		background-size: auto auto;
 		background-clip: border-box;
 		background-size: 200% auto;
 		color: #fff;
 		background-clip: text;
-		text-fill-color: transparent;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		animation: textclip 2s linear infinite;
-		display: inline-block;
+		display: flex;
+		justify-content: center;
+		font-family: $font-stack !important;
+		letter-spacing: 0.2em;
 	}
 }
 
@@ -127,4 +58,45 @@ a {
 	to {
 		background-position: 200% center;
 	}
+}
+
+@media screen and (max-width:750px){
+	.carousel-item img{
+		height: auto;
+	}
+	.carousel-control-prev-icon, .carousel-control-next-icon{
+		top: 150px;
+	}
+	.carusel-text{
+		display: none;
+	}
+	.carousel-inner{
+		height: auto;
+	}
+	.carousel{
+		height: auto;
+	}
+}
+@media screen and (max-width:670px){
+	.carousel-control-prev-icon, .carousel-control-next-icon{
+		top: 100px;
+	}
+
+}
+
+@media screen and (max-width:540px){
+	.carousel-control-prev-icon, .carousel-control-next-icon{
+		top: 60px;
+	}
+
+}
+
+@media screen and (max-width:430px){
+	.carousel-control-prev-icon, .carousel-control-next-icon{
+		top: 20px;
+	}
+	.carousel-control-next-icon{
+		right: 20px;
+	}
+
 }

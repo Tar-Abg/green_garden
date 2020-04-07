@@ -1,8 +1,15 @@
-<div class="card" style="width: 22rem;">
-    <img [src]="cardImage" class="card-img-top" alt="...">
+<div class="card">
+    <img [src]="'https://greengarden77.000webhostapp.com/'+items.image" class="card-img-top img" alt="...">
     <div class="card-body">
-        <h5 class="card-title">{{name}}</h5>
-        <p class="card-text">{{price}} AMD</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title text-center text-danger text-wrap">{{items.title}}</h5>
+        <p class="card-text text-center">{{items.price}} AMD</p>
+        <div id="container" class="seeDetals">
+            <button class="learn-more" [routerLink]="['/item',items.id]">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">see detalss</span>
+            </button>
+          </div>
     </div>
 </div>

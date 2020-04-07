@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="product-img">
+    <img [src]="'https://greengarden77.000webhostapp.com/'+flowerObject?.image" height="420" width="327">
+  </div>
+  <div class="product-info">
+    <div class="product-text w-75">
+      <h1>{{flowerObject?.title}}</h1>
+      <h2>by Green Garden</h2>
+      <p>{{flowerObject?.description}}</p>
+    </div>
+    <p class="price"><span>{{flowerObject?.price}}</span>AMD</p>
+    <div class="product-price-btn">
+
+      <button routerLink="/" type="button" class="backBtn">Back</button>
+    </div>
+  </div>
+</div>

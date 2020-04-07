@@ -1,0 +1,32 @@
+.wrapper{
+    .content{
+        width: 70vw;
+        margin: 0 auto;
+        padding-top: 70px;
+        color: #919191;
+        p,h1,li{
+            font-family: 'Courier New', Courier, monospace;;
+            font-weight: 900;
+        }
+    }
+    background-image: url('../../../assets/carr.jpg');
+    background-size: cover;
+    padding-bottom: 280px;
+    position: relative;
+    top: -45px;
+}
+.header{
+    position: absolute;
+    top: -2px;
+}
+@media screen and (max-width:750px){
+    li, p{
+        font-size: 0.8em;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    ol{
+        width: 100%;
+    }
+}
